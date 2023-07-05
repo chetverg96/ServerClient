@@ -35,7 +35,7 @@ public class Server {
             String name = in.readLine();
             System.out.println("Received message from client: " + name);
 
-            out.println("Hi " + name + ", your port is " + clientSocket.getPort());
+            out.println(name + ", your port is " + clientSocket.getPort());
         } catch (IOException e) {
             e.printStackTrace();
         }
